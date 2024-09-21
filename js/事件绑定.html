@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+
+<body>
+    <div>莫文杰帅吗?</div>
+    <input type="button" id="bt1" name="bd1" value="确实帅" onclick="handsome()">
+    <input type="button" name="bd2" id="bt2" value="帅个屁" onmouseover="notHandsome()">
+</body>
+
+<script>
+    function handsome(){
+        alert("我也觉得");
+    }
+
+    function notHandsome(){
+        alert("问你了?瞎点什么?");
+    }
+
+</script>
+</html>

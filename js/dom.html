@@ -1,0 +1,23 @@
+<body>
+    <div class="cls">莫文杰</div>
+    <div class="cls">22CST</div>
+
+    <input type="checkbox" name="hobby"> 游戏
+    <input type="checkbox" name="hobby"> 打交
+    <input type="checkbox" name="hobby"> 吃饭
+</body>
+
+<script>
+    var divs = document.getElementsByTagName('div');
+    for(let i=0;i<divs.length;i++){
+        const div = divs[i];
+        div.innerHTML+="<font color = 'red'>666</font>"
+    }
+
+    //将checkbox设置为选定状态
+    var checkboxs= document.getElementsByName("hobby");
+    for(let i =0;i<checkboxs.length;i++){
+        const checkbox = checkboxs[i];
+        checkbox.checked = true;
+    }
+</script>
