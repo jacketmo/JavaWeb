@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的VUE</title>
+    <script src="vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" v-model = "message"> 
+        <!-- v-model 是指令，用于监控message这个数据的 -->
+        {{message}} <!-- "{{}}"是一个差值表达式-->
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el:"#app", //vue的接管区域
+        data:{
+            message:"Hello Vue"
+        }
+    })
+</script>
+</html>

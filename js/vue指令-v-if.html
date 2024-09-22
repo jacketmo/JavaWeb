@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>vue指令if</title>
+        <script src="vue.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            年龄<input type="text" v-model="age">为：
+            <span v-if = "age<=35">年轻人</span>
+            <span v-else-if = "age>35&&age<60">中年人</span>
+            <span v-else="age>=60">老年人</span>
+            <hr>
+            年龄<input type="text" v-model="age">为：
+            <span v-show = "age<=35">年轻人</span>
+            <span v-show = "age>35&&age<60">中年人</span>
+            <span v-show="age>=60">老年人</span>
+            <hr>
+            <div v-for="(addr,index) in addrs">{{index+1}}{{addr}}</div>
+        </div>
+    </body>
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                age:20,
+                addrs:['北京','上海','广州','深圳']
+            },
+            methods: {
+                
+            }
+        })
+    </script>
+</html>
